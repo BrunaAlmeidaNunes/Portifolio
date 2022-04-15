@@ -7,8 +7,8 @@
     --html-color: #FF6D00;
     --css-color: #039BE5;
     --js-color: #FFD600;
-    --flutter-color: #40C4FF;
-
+    --reactjs-color: #40C4FF;
+    --angularjs-color: #d00000;
 }
 
 * {
@@ -302,7 +302,10 @@ header {
 }
 
 .conhecimentos .card:nth-child(4)::after {
-    background-color: var(--flutter-color);
+    background-color: var(--reactjs-color);
+}
+.conhecimentos .card:nth-child(5)::after {
+    background-color: var(--angularjs-color);
 }
 
 .conhecimentos .card:hover{
@@ -371,7 +374,7 @@ header {
     margin-top: 100px;
 }
 
-.projetos-card img{
+.projetos-card img, embed{
    width: 100%;
    border-radius: 20px 20px 0px 0px;
 }
@@ -446,10 +449,13 @@ header {
 }
 
 .projeto-card-desc-categoria.flutter {
-    border: 2px solid var(--flutter-color);    
+    border: 2px solid var(--reactjs-color);    
     background-color: rgba(64, 196, 255, 0.25);
 }
-
+.projeto-card-desc-categoria.angularjs {
+    border: 2px solid var(--angularjs-color);    
+    background-color: rgba(255, 0, 0, 0.938);
+}
 
 
 @media (max-width: 1440px) { 
